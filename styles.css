@@ -1,0 +1,153 @@
+:root {
+  -color-orange-: hsl(31, 77%, 52%);
+  -color-dark-cyan-: hsl(184, 100%, 22%);
+  -color-dark-cyan-: hsl(179, 100%, 13%);
+  -color-white-paragraphs-: hsla(0, 0%, 100%, 0.75);
+  -color-gray-background-headings-buttons-: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 94vh;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 1480px;
+    margin-top: 25px;
+  }
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 340px;
+    height: 470px;
+  }
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  padding-top: 10px;
+  padding-left: 45px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 10px;
+  padding-left: 45px;
+  padding-right: 30px;
+  text-align: left;
+  line-height: 25px;
+}
+
+button {
+  background: hsl(0, 0%, 95%);
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedan button:hover {
+  background: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+.suv button {
+  color: hsl(184, 100%, 22%);
+}
+
+.suv button:hover {
+  background: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+  background: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+.card img {
+  padding-top: 65px;
+  padding-left: 45px;
+}
+
+.sedan {
+  background: hsl(31, 77%, 52%);
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.suv {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .sedan {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .luxury {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 500px) {
+    .attribution {
+        position: relative;
+        bottom: 40px;
+    }
+}
